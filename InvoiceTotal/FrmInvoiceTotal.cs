@@ -32,7 +32,6 @@ namespace InvoiceTotal
                 {
                     MessageBox.Show("Please enter numbers between 1 to 10000 in the subTotal.");
                 }
-
             }
             catch (FormatException)
             {

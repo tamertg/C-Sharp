@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -145,7 +146,7 @@
             // subTotalTextbox
             // 
             subTotalTextbox.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            subTotalTextbox.Location = new Point(223, 35);
+            subTotalTextbox.Location = new Point(223, 27);
             subTotalTextbox.Name = "subTotalTextbox";
             subTotalTextbox.Size = new Size(100, 33);
             subTotalTextbox.TabIndex = 0;
