@@ -14,6 +14,8 @@ namespace ClothingSales
             decimal discountRate = 0.1m, price, extendedPrice, discount, amountDue;
             int quantaty;
 
+            try
+            { 
             quantaty = int.Parse(quantatyTextbox.Text);
             price = decimal.Parse(priceTextbox.Text);
             extendedPrice = quantaty * price;
@@ -31,7 +33,15 @@ namespace ClothingSales
 
             quantatyTextbox.Clear();
             priceTextbox.Clear();
-
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter valid numbers in the textboxes.");
+            }
+            catch (OverflowException)
+            {
+                MessageBox.Show("The number entered is too large or too small.");
+            }
         }
 
         private void exitbutton_Click(object sender, EventArgs e)
